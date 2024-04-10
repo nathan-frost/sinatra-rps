@@ -34,7 +34,7 @@ get("/paper") do
   elsif @cpu_move == "scissors"
     @outcome = "lost"
   end
-  erb(:rock)
+  erb(:paper)
 end
 
 get("/scissors") do
@@ -50,5 +50,5 @@ get("/scissors") do
   elsif @cpu_move == "scissors"
     @outcome = "tie"
   end
-  erb(:rock)
+  erb(:scissors)
 end
